@@ -1,0 +1,191 @@
+/* Import the google poppins font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* Reset Style */
+* {
+    border: none;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;      
+}
+
+/* variable colors */
+:root{
+    --color-dark: #1C3A13;
+    --colro-light: #80ff00;
+}
+
+/* Background color */
+body {
+    background-color: #CCFDD5; /* Light green background */
+}
+
+/* Header */
+header {
+    width: 100%;
+    position: relative;
+    top: 0;
+    right: 0;
+    height: 60px;
+    display: flex;
+    justify-content: center; /* Centers the content horizontally */
+    align-items: center;
+    z-index: 100;
+}
+
+header nav {
+    width: 90%; /* Adjust the width of the nav for better alignment */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+header ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none; /* Removes bullets from the list */
+}
+
+header ul li, #login{
+    margin-left: 35px; /* Space between the list items */
+}
+
+header ul li a, #login a {
+    text-decoration: none;
+    font-size: 16px;
+    color: var(--color-dark); /* Dark green text (matching the logo color in the image) */
+    font-weight: bold;
+}
+
+header ul li:hover a{
+    color: #385c2d;
+}
+
+/* Hero Section */
+.hero {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    border-radius: 20px;
+    flex-wrap: wrap; /* Ensures that content wraps in smaller screens */
+    overflow: hidden;
+    transition: all ease-in-out 0.5s;
+}
+
+/* Hero Text */
+.hero-text {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all ease-in-out 0.5s;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    color: var(--color-dark); /* Dark green for heading */
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.hero-text p {
+    font-size: 19px;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.cta-btn {
+    padding: 15px 30px;
+    background-color: transparent;
+    border: 2px solid  var(--color-dark); /* Dark green border */
+    color: var(--color-dark);
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+    background-color: var(--color-dark); /* Dark green on hover */
+    color: var(--colro-light);
+}
+
+/* Hero Image */
+.hero-image img {
+    height: 90%;
+    border-radius: 20px;
+    margin-top: 30px;
+    filter: drop-shadow(5px 5px 3px #202b20);
+}
+
+.hero-image{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    background-color: #4b960017;
+    transition: all ease-in-out 0.5s;
+}
+.image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    height: 100vh;
+    z-index: 100;
+}
+/* Logo styling */
+.logo {
+    font-size: 24px; /* Adjust the size of the logo text */
+    font-weight: bold; /* Bold the logo text */
+}
+
+.logo .brand {
+    background-color: var(--colro-light); /* Light green background */
+    color: var(--color-dark); /* Dark green text for "Kuvi" */
+    padding: 3px 15px; /* Add some padding around "Kuvi" */
+    border-radius: 5px; /* Rounded corners like in the image */
+    font-weight: bold; /* Make "Kuvi" bold */
+    border: solid 2px var(--color-dark);
+}
+
+.logo span.brand + span {
+    font-weight: normal;
+    color: #1C3A13; /* Dark green text for "Fashion" */
+    margin-left: 2px; /* Small space between "Kuvi" and "Fashion" */
+}
+
+/* Style for the Login button (last item in the nav list) */
+#login a {
+    padding: 5px 20px;
+    background-color: #1C3A13; /* Dark green background */
+    color: #63c500; /* White text color */
+    border-radius: 5px;
+    border: 2px solid #1C3A13; /* Dark green border */
+    transition: background-color 0.3s ease;
+}
+
+/* login btn styles */
+#login{
+    list-style: none;
+}
+
+#login a:hover {
+    background-color: #80ff00;
+    color: #1C3A13;
+}

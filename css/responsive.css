@@ -1,0 +1,16 @@
+
+/* Responsive Styles for Tablets and Mobile (Excluding Image) */
+
+@media (max-width: 966px) {
+
+    .hero-text h1{
+        font-size: 2rem;
+    }
+
+}
+
+@media (max-width: 828px) {
+    .cta-btn{
+        padding: 8px 15px;
+    }
+}

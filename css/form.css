@@ -1,0 +1,96 @@
+/* From styles */
+form {
+    background-color: #4d9b001a;
+    opacity: 0; /* Start hidden */
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 350px;
+    height: 450px;
+    align-items: center;
+    border-radius: 15px;
+    border: #0f3105 solid 3px;
+    filter: none;
+    transition: opacity 1s ease, visibility 1s 2s; /* Transition for opacity and visibility */
+}
+
+/* Login text (form title) */
+form h1{
+    margin-top: 15px;
+    font-size: 2.24rem;
+    color: #0f3105;
+    margin-bottom: 15px;
+}
+
+/* username and password */
+form input[type="text"],input[type="password"]{
+    margin: 10px 0;
+    width: 300px;
+    padding: 5px;
+    margin-bottom: 40px;
+    font-size: 1.35rem;
+    background: transparent;
+    border-bottom: 3px solid #225513;
+    outline: none;
+    color: #123a06;
+}
+
+/* username and passwoerd placehoder */
+form input[type='text']::placeholder,
+input[type='password']::placeholder{
+    color: #123a06;
+}
+
+/* submit button styles */
+form input[type='submit']{
+    width: 90%;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #e0ffc0;
+    background-color: #123a06;
+    margin: 55px 0px 0px 0px;
+    border: 3px #123a06 solid;
+    border-radius: 50px;
+    padding: 5px 0px;
+    transition: all ease-in-out 0.5s;
+}
+
+/* form botton hover */
+form input[type='submit']:hover{
+    background-color: #63c500;
+    color: #0f3105;
+}
+
+/* close icon style */
+form i{
+    font-size: 3rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 1px;
+}
+/* close hover */
+form i:hover{
+    cursor: pointer;
+    color: #2b2e2b;
+}
+
+/* Forgor password and rememeber me */
+form .option{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    justify-content: space-between;
+    margin-top: 8px;
+}
+
+/* check box styles */
+input[type='checkbox']{
+    width: 15px;
+    height: 15px;
+    margin-right: 3px;
+}
